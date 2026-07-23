@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Najuk XO - A fun neon Tic Tac Toe game.">
+
+    <title>Najuk XO 💜</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- 🔐 PASSWORD SCREEN -->
+
+    <section
+        id="passwordScreen"
+        class="screen active">
+
+        <div class="card">
+
+            <div class="game-logo">
+                💜
+            </div>
+
+            <h1>
+                NAJUK XO
+            </h1>
+
+            <p>
+                🔐 Enter the secret password
+            </p>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter password">
+
+            <button
+                id="passwordBtn">
+
+                🔓 Unlock Game
+
+            </button>
+
+            <p
+                id="passwordMessage"
+                class="message">
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 👤 NAME SCREEN -->
+
+    <section
+        id="nameScreen"
+        class="screen">
+
+        <div class="card">
+
+            <div class="game-logo">
+                👤
+            </div>
+
+            <h1>
+                Welcome to Najuk XO
+            </h1>
+
+            <p>
+                Enter your name to continue
+            </p>
+
+            <input
+                type="text"
+                id="playerNameInput"
+                placeholder="Enter your name"
+                maxlength="20">
+
+            <button
+                id="nameBtn">
+
+                Continue ✨
+
+            </button>
+
+            <p
+                id="nameMessage"
+                class="message">
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 🎮 MODE SCREEN -->
+
+    <section
+        id="modeScreen"
+        class="screen">
+
+        <div class="card">
+
+            <div class="game-logo">
+                🎮
+            </div>
+
+            <h1>
+                Choose Your Mode
+            </h1>
+
+            <p
+                id="welcomeText">
+
+            </p>
+
+
+            <button
+                class="modeBtn"
+                id="computerModeBtn">
+
+                🤖 VS COMPUTER
+
+            </button>
+
+
+            <button
+                class="modeBtn"
+                id="twoPlayerModeBtn">
+
+                👥 2 PLAYERS
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ❌⭕ GAME SCREEN -->
+
+    <section
+        id="gameScreen"
+        class="screen">
+
+        <div class="game-container">
+
+
+            <header>
+
+                <div class="game-logo">
+                    💜
+                </div>
+
+                <h1>
+                    NAJUK XO
+                </h1>
+
+                <p
+                    id="gameStatus">
+
+                    Your Turn ❌
+
+                </p>
+
+            </header>
+
+
+            <!-- 🏆 SCORE -->
+
+            <div class="scoreboard">
+
+                <div class="score-box">
+
+                    <span
+                        id="playerOneLabel">
+
+                        Player ❌
+
+                    </span>
+
+                    <strong
+                        id="playerOneScore">
+
+                        0
+
+                    </strong>
+
+                </div>
+
+
+                <div class="score-box">
+
+                    <span
+                        id="playerTwoLabel">
+
+                        Player ⭕
+
+                    </span>
+
+                    <strong
+                        id="playerTwoScore">
+
+                        0
+
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- 🎮 BOARD -->
+
+            <div
+                id="gameBoard"
+                class="game-board">
+
+
+                <button
+                    class="cell"
+                    data-index="0">
+
+                </button>
+
+
+                <button
+                    class="cell"
+                    data-index="1">
+
+                </button>
+
+
+                <button
+                    class="cell"
+                    data-index="2">
+
+                </button>
+
+
+                <button
+                    class="cell"
+                    data-index="3">
+
+                </button>
+
+
+                <button
+                    class="cell"
+                    data-index="4">
+
+                </button>
+
+
+                <button
+                    class="cell"
+                    data-index="5">
+
+                </button>
+
+
+                <button
+                    class="cell"
+                    data-index="6">
+
+                </button>
+
+
+                <button
+                    class="cell"
+                    data-index="7">
+
+                </button>
+
+
+                <button
+                    class="cell"
+                    data-index="8">
+
+                </button>
+
+
+            </div>
+
+
+            <!-- 🏆 RESULT -->
+
+            <div
+                id="resultBox"
+                class="result-box">
+
+                <h2
+                    id="resultTitle">
+
+                </h2>
+
+                <p
+                    id="resultMessage">
+
+                </p>
+
+                <button
+                    id="newGameBtn">
+
+                    🔄 New Game
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <script
+        src="script.js">
+
+    </script>
+
+
+</body>
+
+              </html>
